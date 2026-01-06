@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Users, MapPin, Award, Check } from "lucide-react";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
+import mapa from "@/assets/MAPA.png";
 import redPatternBg from "@/assets/red-pattern-bg.jpg";
 
 const Representantes = () => {
@@ -109,29 +110,42 @@ const Representantes = () => {
 
       {/* Presença */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Onde estamos</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-8">
-            Estados com Presença Fredão
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12">
-            Já somos líderes de vendas em diversos estados brasileiros. Se sua região ainda não está na lista, essa é sua oportunidade!
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {["Pará", "Ceará", "Maranhão", "Pernambuco", "Minas Gerais", "Santa Catarina"].map((estado, index) => (
-              <span
-                key={index}
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium"
-              >
-                {estado}
-              </span>
-            ))}
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider">Onde estamos</span>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
+                Estados com Presença Fredão
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8">
+                Já somos líderes de vendas em diversos estados brasileiros. Se sua região ainda não está na lista, essa é sua oportunidade!
+              </p>
+              
+              <div className="flex flex-wrap gap-4 mb-8">
+                {["Pará", "Ceará", "Maranhão", "Pernambuco", "Minas Gerais", "Santa Catarina"].map((estado, index) => (
+                  <span
+                    key={index}
+                    className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium"
+                  >
+                    {estado}
+                  </span>
+                ))}
+              </div>
+              
+              <p className="text-muted-foreground text-lg">
+                E estamos em constante expansão para novos territórios!
+              </p>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={mapa}
+                  alt="Mapa do Brasil - Presença da Fredão Alimentos"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
           </div>
-          
-          <p className="text-muted-foreground text-lg mb-8">
-            E estamos em constante expansão para novos territórios!
-          </p>
         </div>
       </section>
 

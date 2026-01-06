@@ -98,7 +98,10 @@ const Contato = () => {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 bg-accent rounded-xl">
+                <a
+                  href="tel:+5521959001194"
+                  className="flex items-center gap-4 p-4 bg-accent rounded-xl hover:bg-accent/80 transition-colors"
+                >
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
@@ -106,9 +109,12 @@ const Contato = () => {
                     <span className="font-semibold text-foreground block">Telefone</span>
                     <span className="text-muted-foreground text-sm">(21) 95900-1194</span>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-center gap-4 p-4 bg-accent rounded-xl">
+                <a
+                  href="mailto:contato@fredaoalimentos.com.br"
+                  className="flex items-center gap-4 p-4 bg-accent rounded-xl hover:bg-accent/80 transition-colors"
+                >
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                     <Mail className="w-6 h-6 text-primary-foreground" />
                   </div>
@@ -116,7 +122,7 @@ const Contato = () => {
                     <span className="font-semibold text-foreground block">E-mail</span>
                     <span className="text-muted-foreground text-sm">contato@fredaoalimentos.com.br</span>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-4 p-4 bg-accent rounded-xl">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">

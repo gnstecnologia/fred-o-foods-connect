@@ -65,14 +65,18 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-lg mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/alimentosfredao"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/alimentosfredao"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="Facebook"
               >
@@ -94,7 +98,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>© 2024 Fredão Alimentos. Todos os direitos reservados.</p>
+            <p>© 2026 Fredão Alimentos. Todos os direitos reservados.</p>
             <p>CNPJ: 30.163.471/0001-XX</p>
           </div>
         </div>
