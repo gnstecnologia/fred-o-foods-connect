@@ -6,107 +6,108 @@
 
 @layer base {
   :root {
-    /* Fredão Alimentos - Natural & Brazilian */
-    --background: 40 20% 98%;
-    --foreground: 30 10% 15%;
+    /* Fredão Alimentos - Identidade Visual Oficial */
+    /* Vermelho vibrante, brasileiro e acolhedor */
+    
+    --background: 60 56% 97%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 10% 15%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 10% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Primary - Natural Green */
-    --primary: 152 59% 30%;
+    /* Primary - Vermelho Fredão #DC0000 */
+    --primary: 0 100% 43%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Coconut Brown */
-    --secondary: 24 47% 33%;
+    /* Secondary - Verde Coco #228B22 */
+    --secondary: 120 61% 34%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Muted - Soft Beige */
-    --muted: 35 25% 92%;
-    --muted-foreground: 30 10% 40%;
+    /* Muted - Bege/Creme #F5F5DC */
+    --muted: 60 56% 91%;
+    --muted-foreground: 0 0% 35%;
 
-    /* Accent - Light Green */
-    --accent: 145 40% 75%;
-    --accent-foreground: 152 59% 20%;
+    /* Accent - Dourado/Amarelo #FFD700 */
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 152 59% 30%;
+    --border: 60 30% 88%;
+    --input: 60 30% 88%;
+    --ring: 0 100% 43%;
 
     --radius: 0.75rem;
 
-    /* Custom Colors */
-    --coconut: 24 47% 33%;
-    --coconut-light: 30 30% 85%;
-    --leaf: 152 59% 30%;
-    --leaf-light: 145 40% 85%;
-    --cream: 40 30% 96%;
-    --sand: 35 25% 92%;
+    /* Custom Colors - Fredão */
+    --fredao-red: 0 100% 43%;
+    --fredao-gold: 51 100% 50%;
+    --fredao-green: 120 61% 34%;
+    --fredao-cream: 60 56% 91%;
+    --fredao-black: 0 0% 0%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(152 59% 30%) 0%, hsl(145 50% 40%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(35 30% 95%) 0%, hsl(40 25% 90%) 100%);
-    --gradient-coconut: linear-gradient(180deg, hsl(24 47% 33%) 0%, hsl(24 40% 25%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 100% 43%) 0%, hsl(0 100% 35%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(60 56% 97%) 0%, hsl(60 56% 91%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%) 0%, hsl(45 100% 45%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(30 10% 15% / 0.08);
-    --shadow-md: 0 8px 24px -8px hsl(30 10% 15% / 0.12);
-    --shadow-lg: 0 16px 48px -12px hsl(30 10% 15% / 0.15);
-    --shadow-green: 0 8px 24px -8px hsl(152 59% 30% / 0.25);
+    --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(0 0% 0% / 0.12);
+    --shadow-lg: 0 16px 48px -12px hsl(0 0% 0% / 0.15);
+    --shadow-red: 0 8px 24px -8px hsl(0 100% 43% / 0.3);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 152 59% 30%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 145 40% 95%;
-    --sidebar-accent-foreground: 152 59% 20%;
-    --sidebar-border: 35 20% 88%;
-    --sidebar-ring: 152 59% 30%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 0 100% 43%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 60 56% 95%;
+    --sidebar-accent-foreground: 0 100% 35%;
+    --sidebar-border: 60 30% 88%;
+    --sidebar-ring: 0 100% 43%;
   }
 
   .dark {
-    --background: 30 15% 8%;
-    --foreground: 35 20% 95%;
+    --background: 0 0% 8%;
+    --foreground: 60 56% 95%;
 
-    --card: 30 12% 12%;
-    --card-foreground: 35 20% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 60 56% 95%;
 
-    --popover: 30 12% 12%;
-    --popover-foreground: 35 20% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 60 56% 95%;
 
-    --primary: 145 50% 45%;
-    --primary-foreground: 30 15% 8%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 35% 40%;
-    --secondary-foreground: 35 20% 95%;
+    --secondary: 120 50% 40%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 12% 18%;
-    --muted-foreground: 35 15% 60%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 60 20% 65%;
 
-    --accent: 145 35% 25%;
-    --accent-foreground: 145 50% 85%;
+    --accent: 51 100% 45%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 12% 20%;
-    --input: 30 12% 20%;
-    --ring: 145 50% 45%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 50%;
 
-    --sidebar-background: 30 12% 10%;
-    --sidebar-foreground: 35 20% 90%;
-    --sidebar-primary: 145 50% 45%;
-    --sidebar-primary-foreground: 30 15% 8%;
-    --sidebar-accent: 30 12% 15%;
-    --sidebar-accent-foreground: 145 50% 85%;
-    --sidebar-border: 30 12% 18%;
-    --sidebar-ring: 145 50% 45%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 60 56% 90%;
+    --sidebar-primary: 0 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 100% 70%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 100% 50%;
   }
 }
 
@@ -139,8 +140,8 @@
     background: var(--gradient-warm);
   }
 
-  .bg-gradient-coconut {
-    background: var(--gradient-coconut);
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
   }
 
   .shadow-card {
@@ -151,8 +152,8 @@
     box-shadow: var(--shadow-lg);
   }
 
-  .shadow-green {
-    box-shadow: var(--shadow-green);
+  .shadow-red {
+    box-shadow: var(--shadow-red);
   }
 }
 

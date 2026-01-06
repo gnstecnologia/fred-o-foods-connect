@@ -51,10 +51,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        coconut: "hsl(var(--coconut))",
-        leaf: "hsl(var(--leaf))",
-        cream: "hsl(var(--cream))",
-        sand: "hsl(var(--sand))",
+        fredao: {
+          red: "hsl(var(--fredao-red))",
+          gold: "hsl(var(--fredao-gold))",
+          green: "hsl(var(--fredao-green))",
+          cream: "hsl(var(--fredao-cream))",
+          black: "hsl(var(--fredao-black))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

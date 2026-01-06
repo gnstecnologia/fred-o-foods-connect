@@ -49,7 +49,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Link
               to="/contato"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-heading font-semibold hover:bg-primary/90 transition-all duration-300 shadow-green hover:-translate-y-0.5"
+              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-heading font-semibold hover:bg-primary/90 transition-all duration-300 shadow-red hover:-translate-y-0.5"
             >
               Fale Conosco
             </Link>
