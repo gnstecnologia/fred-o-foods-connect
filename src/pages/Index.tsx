@@ -5,7 +5,7 @@ import coconutMilk from "@/assets/coconut-milk.jpg";
 import coconutOil from "@/assets/coconut-oil.jpg";
 import coconutRalado from "@/assets/coconut-ralado.jpg";
 import coconutProduct from "@/assets/coconut-product.jpg";
-
+import redPatternBg from "@/assets/red-pattern-bg.jpg";
 const Index = () => {
   const products = [
     { name: "Leite de Coco", image: coconutMilk, description: "Cremoso e natural" },
@@ -70,7 +70,7 @@ const Index = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -110,11 +110,11 @@ const Index = () => {
       </section>
 
       {/* Diferenciais */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${redPatternBg})` }}>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Por que escolher</span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
+            <span className="text-primary-foreground/80 font-semibold text-sm uppercase tracking-wider">Por que escolher</span>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mt-2">
               Nossos Diferenciais
             </h2>
           </div>
@@ -141,7 +141,7 @@ const Index = () => {
       </section>
 
       {/* Products Preview */}
-      <section className="py-20 bg-muted">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">Portfólio</span>
@@ -191,8 +191,8 @@ const Index = () => {
       </section>
 
       {/* Presença Nacional */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${redPatternBg})` }}>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Presença em Todo o Brasil
@@ -229,13 +229,13 @@ const Index = () => {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
-          <div className="bg-secondary rounded-3xl p-8 md:p-16 text-center shadow-lg">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary-foreground mb-4">
+          <div className="bg-gradient-hero rounded-3xl p-8 md:p-16 text-center shadow-lg">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Alimentação saudável começa aqui
             </h2>
-            <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
+            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
               Entre em contato e descubra como nossos produtos podem fazer parte da sua rotina.
             </p>
             <Link
