@@ -191,8 +191,11 @@ const Index = () => {
       </section>
 
       {/* Presença Nacional */}
-      <section className="py-20 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${redPatternBg})` }}>
-        <div className="container mx-auto px-4 relative z-10">
+      <section 
+        className="py-20 section-bg-rotated" 
+        style={{ '--bg-image': `url(${redPatternBg})` } as React.CSSProperties}
+      >
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Presença em Todo o Brasil
